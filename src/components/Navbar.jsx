@@ -18,7 +18,7 @@ const Navbar = () => {
       </ul>
 
       <div className="cursor-pointer block md:hidden" onClick={handleNav}>
-        {!nav ? (
+        {nav ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       <div
         className={
-          !nav
+          nav
             ? "fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-[#000300] ease-in-out duration-500 md:hidden"
             : "fixed left-[-100%]"
         }
